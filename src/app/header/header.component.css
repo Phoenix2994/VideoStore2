@@ -1,0 +1,27 @@
+.nav-bar {
+    height: 100px;
+    background-color: gold;
+    display: flex;
+    width: -webkit-fill-available;
+}
+
+img {
+    height: 80px;
+    margin: 10px 50px;
+}
+
+.flex-container-left {
+    display: flex;
+    align-items: center;
+}
+
+.flex-container-right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: -webkit-fill-available;
+}
+
+.flex-container-right div{
+    margin: 0 10px;
+}

@@ -1,0 +1,12 @@
+<div class="content">
+  <img src="assets/images/logo.png">
+  <form>
+    <div class='input'>
+      <input type="email" name="email" placeholder="Email" [(ngModel)]="email">
+      <input type="password" name="password" placeholder="Password" [(ngModel)]="password">
+    </div>
+    <div>
+      <input type="submit" value="Login" (click)='LoginUser()'>
+    </div>
+  </form>
+</div>

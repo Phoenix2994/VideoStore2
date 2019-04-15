@@ -1,0 +1,28 @@
+.content{
+    text-align:center;
+}
+
+img{
+    width:300px;
+    height:auto;
+    margin: 80px auto;
+}
+
+form {
+    height: 250px;
+    width: 500px;
+    border-radius: 15px;
+    background-color: gold;
+    margin: 0 auto;
+}
+
+input {
+    width: 50%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.input {
+    padding-top: 60px;
+    padding-bottom:30px;
+}
