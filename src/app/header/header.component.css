@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .nav-bar {
     height: 100px;
     background-color: gold;
@@ -22,6 +27,6 @@ img {
     width: -webkit-fill-available;
 }
 
-.flex-container-right div{
+.flex-container-right div {
     margin: 0 10px;
 }

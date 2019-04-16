@@ -5,8 +5,17 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
 
-  isLoggedIn: boolean;
+  private loggedInStatus = JSON.parse(localStorage.getItem('loggedIn') || 'false');
 
-  constructor() { this.isLoggedIn = false; }
+  constructor() { }
+
+  setLoggedIn(value: boolean) {
+    this.loggedInStatus = value;
+    localStorage.setItem('loggedIn', value.toString());
+  }
+
+  getIsLoggedIn() {
+    return JSON.parse(localStorage.getItem('loggedIn') || this.loggedInStatus.toString());
+  }
 
 }

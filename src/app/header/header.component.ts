@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  searchingTerm: string;
+
+  @Output() movieToSearch = new EventEmitter<string>();
+
+  constructor(private router: Router, private authService: AuthService) { }
 
   ngOnInit() {
+  }
+
+  LogoutUser() {
+    this.authService.setLoggedIn(false);
+    this.router.navigateByUrl('/login');
+  }
+
+  SearchMovie() {
+    this.movieToSearch.emit(this.searchingTerm);
   }
 
 }

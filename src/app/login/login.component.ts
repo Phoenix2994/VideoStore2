@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
 
   LoginUser() {
     if (this.email === 'miamail@gmail.com' && this.password === 'miapassword') {
-      this.authService.isLoggedIn = true;
+      this.authService.setLoggedIn(true);
       this.router.navigateByUrl('/dashboard');
     }
   }

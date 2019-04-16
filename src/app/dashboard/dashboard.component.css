@@ -1,0 +1,10 @@
+.movie-container{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color:white;
+    margin-left: 200px;
+    margin-top: 50px;
+}

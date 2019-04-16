@@ -1,12 +1,13 @@
 <div class='nav-bar'>
   <div class='flex-container-left'>
     <div><img src="assets/images/logo.png"></div>
-    <div><a>Home</a></div>
+    <div><a routerLink="/dashboard">Home</a></div>
   </div>
   <div class='flex-container-right'>
-    <div><button>Search</button></div>
-    <div><input placeholder="Search movie..."></div>
-    <div><button>Logout</button></div>
-    <div><a>Hello cinema@cinema.it</a></div>
+    <div>
+      <input [(ngModel)]="searchingTerm" placeholder="Search movie...">
+      <button (click)="SearchMovie()">Search</button></div>
+    <div><button (click)='LogoutUser()'>Logout</button></div>
+    <div><a routerLink="/dashboard">Hello cinema@cinema.it</a></div>
   </div>
 </div>
