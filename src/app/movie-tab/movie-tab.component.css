@@ -7,14 +7,27 @@ div {
 }
 
 .movie-container {
-    width: 120px;
+    width: 200px;
     margin: 15px;
     background-color: white;
-    padding: 20px;
     border-radius: 5px;
 }
 
-.movie-info {
-    height: 320px;
-    overflow: auto;
+.movie-detail {
+    height: 260px;
+    padding:20px;
+    overflow: hidden;
+}
+
+div button {
+    margin-bottom: 10px;
+    background-color: blue;
+    color: white;
+}
+
+img {
+    height:300px;
+    width:200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }

@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { MovieTabComponent } from './movie-tab/movie-tab.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { MovieTabComponent } from './movie-tab/movie-tab.component';
     LoginComponent,
     DashboardComponent,
     HeaderComponent,
-    MovieTabComponent
+    MovieTabComponent,
+    MovieDetailComponent
   ],
   imports: [
     BrowserModule,

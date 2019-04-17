@@ -1,8 +1,11 @@
 <app-header (movieToSearch)="SearchMovie($event)"></app-header>
-<h1>Popular Movies</h1>
-<div class="movie-container">
-    <div *ngFor="let movie of movies">
-        <app-movie-tab *ngIf='(movie.title | lowercase).includes(searchingTerm | lowercase) || searchingTerm == undefined'
-            [movie]="movie"></app-movie-tab>
+<div class="container">
+    <h1>Popular Movies</h1>
+    <div class="movie-container">
+        <div *ngFor="let movie of movies">
+            <app-movie-tab
+                *ngIf='(movie.title | lowercase).includes(searchingTerm | lowercase) || searchingTerm == undefined'
+                [movie]="movie"></app-movie-tab>
+        </div>
     </div>
 </div>
